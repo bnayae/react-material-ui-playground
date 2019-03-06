@@ -10,6 +10,7 @@ import ButtonSizes from "./components/buttons/ButtonSizes";
 import TabShow from "./components/TabShow";
 import IntegrationReactSelect from "./components/IntegrationReactSelect";
 import ImageAvatars from "./components/ImageAvatars";
+import SimpleBadge from "./components/SimpleBadge";
 
 import MuiThemeProvider from "@material-ui/core/styles/MuiThemeProvider";
 import createMuiTheme from "@material-ui/core/styles/createMuiTheme";
@@ -41,6 +42,8 @@ class App extends Component {
     return (
       <MuiThemeProvider theme={theme}>
         <TopBar />
+        <hr />
+        <SimpleBadge />
         <hr />
         <OutlinedButtons />
         <hr />
