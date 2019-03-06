@@ -11,6 +11,9 @@ import TabShow from "./components/TabShow";
 import IntegrationReactSelect from "./components/IntegrationReactSelect";
 import ImageAvatars from "./components/ImageAvatars";
 import SimpleBadge from "./components/SimpleBadge";
+import RadioSelection from "./components/RadioSelection";
+import Cards from "./components/Cards";
+import OutlinedChips from "./components/OutlinedChips";
 
 import MuiThemeProvider from "@material-ui/core/styles/MuiThemeProvider";
 import createMuiTheme from "@material-ui/core/styles/createMuiTheme";
@@ -35,8 +38,46 @@ const theme = createMuiTheme({
   status: {
     danger: "orange"
   }
+  // overrides: {
+  //   MuiButton: {
+  //     root: {
+  //       color: "white",
+  //       "&:hover": {
+  //         backgroundColor: "purple"
+  //       }
+  //     }
+  //   }
+  // }
 });
 
+// const theme = createMuiTheme({
+//   {
+//     palette: {
+//       primary: {
+//         c100: blue[100],
+//         c200: blue[200],
+//         light: blue[300],
+//         main: blue[500],
+//         dark: blue[700]
+//       },
+//       secondary: {
+//         light: deepOrange[300],
+//         main: deepOrange[500],
+//         dark: deepOrange[700]
+//       }
+//     },
+//     typography: {
+//       fontFamily: '"Roboto", "Helvetica", "Arial", sans-serif',
+//       fontSize: 14,
+//       fontWeightLight: 300,
+//       fontWeightRegular: 400,
+//       fontWeightMedium: 500
+//     },
+//     anchor: {
+//       main: blue[500],
+//       selected: blue[700]
+//     },
+//   });
 class App extends Component {
   render() {
     return (
@@ -51,13 +92,19 @@ class App extends Component {
         <hr />
         <ButtonSizes />
         <hr />
+        <RadioSelection />
+        <hr />
         <TabShow />
         <hr />
         <IntegrationReactSelect />
         <hr />
+        <Cards />
+        <hr />
         <ImageAvatars />
         <hr />
         <Playground />
+        <hr />
+        <OutlinedChips />
       </MuiThemeProvider>
     );
   }

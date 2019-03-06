@@ -59,6 +59,17 @@ function SimpleBadge(props) {
       <Badge color="primary" badgeContent={4} className={classes.margin}>
         <Button variant="contained">Button</Button>
       </Badge>
+      <Badge color="secondary" variant="dot" className={classes.margin}>
+        <Button>Button</Button>
+      </Badge>
+      <Badge
+        className={classes.margin}
+        badgeContent={1000}
+        max={999}
+        color="primary"
+      >
+        <MailIcon />
+      </Badge>
     </div>
   );
 }
