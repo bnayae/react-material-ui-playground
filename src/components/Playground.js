@@ -8,8 +8,9 @@ export class Playground extends Component {
   render() {
     return (
       <>
-        <Topography variant="title" color="inherit">
-          <h1>Hello Title</h1>
+        <Topography variant="h3" color="inherit">
+          Hello Title
+          <br />
           <Button variant="contained" color="primary">
             Hello World
           </Button>

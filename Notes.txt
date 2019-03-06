@@ -3,6 +3,7 @@ https://material-ui.com/getting-started/installation/
 credit: https://www.youtube.com/watch?v=PWadEeOuv5o
 
 # Demos
+https://material-ui.com/customization/themes/
 https://material-ui.com/demos/app-bar/
 https://material-ui.com/demos/menus/
 https://material-ui.com/demos/buttons/
@@ -15,5 +16,6 @@ npm i -s @material-ui/icons
 npm i --save-dev css-loader mini-css-extract-plugin
 npm i -s react react-dom @types/react @types/react-dom
 npm i --save-dev typescript awesome-typescript-loader source-map-loader
-
+npm i -s react-swipeable-views
+npm i -s react-select
 npm audit fix

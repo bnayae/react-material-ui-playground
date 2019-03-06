@@ -21,6 +21,8 @@ import AccountCircle from "@material-ui/icons/AccountCircle";
 import MailIcon from "@material-ui/icons/Mail";
 import NotificationsIcon from "@material-ui/icons/Notifications";
 import MoreIcon from "@material-ui/icons/MoreVert";
+import Avatar from "@material-ui/core/Avatar";
+import avatarIcon from "../static/images/avatar/bnaya.png";
 
 const styles = (theme: Theme) =>
   createStyles({
@@ -90,6 +92,15 @@ const styles = (theme: Theme) =>
       [theme.breakpoints.up("md")]: {
         display: "none"
       }
+    },
+
+    avatar: {
+      margin: 10
+    },
+    bigAvatar: {
+      margin: 10,
+      width: 60,
+      height: 60
     }
   });
 
@@ -218,6 +229,12 @@ class TopBar extends React.Component<Props, State> {
                   <NotificationsIcon />
                 </Badge>
               </IconButton>
+              <Avatar
+                alt="Remy Sharp"
+                src={avatarIcon}
+                className={classes.avatar}
+              />
+
               <IconButton
                 aria-owns={isMenuOpen ? "material-appbar" : undefined}
                 aria-haspopup="true"
